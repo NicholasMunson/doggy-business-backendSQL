@@ -12,7 +12,7 @@ const timeRoute = require("./routes/route-dogBusinessTime.js")
 app.use(cors())
 app.use(bodyParser.json())
 app.use(morgan("dev"))
-app.use("/dogProfile", profileRoute)
-app.use("/businessTime", timeRoute)
+app.use("/dog-profile", profileRoute)
+app.use("/business-time", timeRoute)
 
 module.exports = app
