@@ -5,7 +5,7 @@ return knex
     .createTable("time", time => {
         time.increments()
         time.string("name")
-        time.timestamps('created_at').defaultTo(knex.fn.now())
+        time.string('time')
     })
 };
 
